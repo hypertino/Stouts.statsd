@@ -5,6 +5,7 @@
   register: npm_version
   ignore_errors: true
   changed_when: false
+  check_mode: no
 
 - name: Ensure that NPM is installed
   apt:  name=npm update_cache=yes
